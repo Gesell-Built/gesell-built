@@ -1,0 +1,15 @@
+# Customer project links (Gesell-Built/cabinet-pm, 2026-11-21).
+#
+# Every client gets a link at gesellbuilt.com/<their street>, e.g. gesellbuilt.com/123-main-street,
+# that opens their project in cabinet-pm (Netlify site "cabinetrypm"). These rules pass such
+# addresses, and the files that page needs, through to cabinet-pm.
+#
+# Netlify uses a rule like these (status 200, no "!") only when this website has no file at that
+# address, so the home page, index.html and everything in images/ keep working exactly as before.
+# The project page itself asks cabinet-pm's server directly to check the customer's access code.
+
+/_next/*     https://cabinetrypm.netlify.app/_next/:splat     200
+/fonts/*     https://cabinetrypm.netlify.app/fonts/:splat     200
+/textures/*  https://cabinetrypm.netlify.app/textures/:splat  200
+/:slug       https://cabinetrypm.netlify.app/portal/          200
+/:slug/      https://cabinetrypm.netlify.app/portal/          200
