@@ -58,8 +58,8 @@
   /* header */
   header { position: sticky; top: 0; background: rgba(242,240,230,.96); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); z-index: 100; }
   .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 28px; max-width: 1200px; margin: 0 auto; gap: 20px; }
-  .logo { display: flex; flex-direction: column; text-decoration: none; line-height: 1; }
-  .logo-name { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 1.45rem; letter-spacing: .06em; color: var(--navy); text-transform: uppercase; }
+  .logo { display: flex; flex-direction: column; align-items: center; text-decoration: none; line-height: 1; }
+  .logo-img { display: block; width: 150px; height: auto; }
   .logo-sub { font-size: .6rem; color: var(--gold-deep); letter-spacing: .3em; margin-top: 6px; font-weight: 600; text-transform: uppercase; }
   nav ul { display: flex; gap: 30px; list-style: none; align-items: center; }
   nav a { color: var(--navy); text-decoration: none; font-weight: 500; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; }
@@ -308,7 +308,9 @@
   footer li { margin-bottom: 10px; font-size: .92rem; }
   footer a { color: rgba(242,240,230,.7); text-decoration: none; }
   footer a:hover { color: var(--gold); }
-  footer .logo-name { color: var(--cream); }
+  footer .logo { align-items: flex-start; }
+  footer .logo-img { background: var(--cream); padding: 14px 18px; border-radius: 4px; width: 200px; box-sizing: content-box; }
+  footer .logo-sub { margin-top: 12px; }
   footer .ftag { font-size: .93rem; margin-top: 16px; max-width: 380px; line-height: 1.75; }
   .footer-bottom { border-top: 1px solid rgba(212,181,127,.18); padding-top: 24px; text-align: center; font-size: .8rem; }
 
@@ -582,7 +584,7 @@
 
 <header>
   <div class="nav">
-    <a href="#top" class="logo"><span class="logo-name">Gesell Built</span><span class="logo-sub">Custom Cabinetry · Winnipeg</span></a>
+    <a href="#top" class="logo"><img class="logo-img" src="/brand/logo.svg" alt="Gesell Built" width="210" height="62.5"><span class="logo-sub">Custom Cabinetry · Winnipeg</span></a>
     <nav>
       <ul>
         <li><a href="#why">Why It Costs Less</a></li>
@@ -1058,7 +1060,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a href="#top" class="logo"><span class="logo-name">Gesell Built</span><span class="logo-sub">Custom Cabinetry · Winnipeg</span></a>
+        <a href="#top" class="logo"><img class="logo-img" src="/brand/logo.svg" alt="Gesell Built" width="210" height="62.5"><span class="logo-sub">Custom Cabinetry · Winnipeg</span></a>
         <p class="ftag">Custom cabinets, without the catch. Custom-shop quality and options at half the custom-shop price. Built to your measurements, made on the Prairies, installed in Winnipeg.</p>
       </div>
       <div>
